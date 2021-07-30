@@ -1,0 +1,14 @@
+<div>
+    <button  (click)="onSpanClick()" class="btn"
+    [class.btn-primary]="isSelected"
+    [class.btn-info]="!isSelected"
+
+    [ngClass]="
+    {
+        'class.btn-primary' : isSelected , 
+        'class.btn-info' : !isSelected
+    }
+    "
+    >Show</button>
+
+</div>
